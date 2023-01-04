@@ -56,7 +56,7 @@ var SliderControl = function SliderControl(props) {
     }
   }), /*#__PURE__*/_react["default"].createElement("div", {
     className: "value right"
-  }, max))));
+  }, props.max))));
 };
 exports.SliderControl = SliderControl;
 SliderControl.propTypes = {

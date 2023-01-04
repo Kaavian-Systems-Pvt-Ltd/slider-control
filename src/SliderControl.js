@@ -39,7 +39,7 @@ export const SliderControl = (props) => {
           {props.min}</div>
         <input type="range" min={props.min} max={props.max} defaultValue={props.defaultValue} steps={props.step} onChange={(e)=>{props.onChange(e.target.value)}}/>
         <div className="value right">
-          {max}</div>
+          {props.max}</div>
       </div>
     </div>
   </div>
