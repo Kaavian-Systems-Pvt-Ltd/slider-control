@@ -2,10 +2,10 @@
   "name": "@kaavian-sys/slider-control",
   "version": "1.0.0",
   "description": "",
-  "main": "src/SliderControl.jsx",
+  "main": "src/SliderControl.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src/SliderControl.jsx --out-file scripts/SliderControl.jsx"
+    "build": "babel src/SliderControl.js --out-file scripts/SliderControl.jsx"
   },
   "author": "",
   "license": "ISC",
