@@ -5,11 +5,12 @@
   "main": "scripts/SliderControl.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src/SliderControl.js --out-file scripts/SliderControl.jsx"
+    "build": "babel src/SliderControl.jsx --out-file scripts/SliderControl.jsx"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-plugin-transform-import-css": "^1.0.0-alpha.11",
     "css-loader": "^6.7.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
