@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 import './style.css';
 
 const SliderControl = (props) => {
@@ -51,3 +52,19 @@ const SliderControl = (props) => {
 }
 
 export default SliderControl;
+
+SliderControl.propTypes = {
+  'min': PropTypes.number,
+  'max': PropTypes.number,
+  'step': PropTypes.number,
+  'defaultValue': PropTypes.number,
+  'handleChange' : PropTypes.func,
+}
+
+SliderControl.defaultProps = {
+  'min' : 0,
+  'max' : 100,
+  'step' : 1,
+  'defaultValue' : 50,
+  'handleChange': handleChange,
+}
