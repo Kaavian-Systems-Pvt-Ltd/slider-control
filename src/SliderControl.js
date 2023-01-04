@@ -51,7 +51,7 @@ SliderControl.propTypes = {
   'max': PropTypes.number,
   'step': PropTypes.number,
   'defaultValue': PropTypes.number,
-  'setValue' : PropTypes.func,
+  'setValue()' : PropTypes.func,
 }
 
 SliderControl.defaultProps = {
@@ -59,5 +59,5 @@ SliderControl.defaultProps = {
   'max' : 100,
   'step' : 1,
   'defaultValue' : 50,
-  'setValue': setValue,
+  'setValue()': setValue(),
 }
