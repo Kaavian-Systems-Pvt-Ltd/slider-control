@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import './style.css';
 
-const SliderControl = (props) => {
+export const SliderControl = (props) => {
   const [Value, setValue] = useState();
   let value ;
   useEffect(() => {
@@ -50,8 +50,6 @@ const SliderControl = (props) => {
   </div>
    )
 }
-
-export default SliderControl;
 
 SliderControl.propTypes = {
   'min': PropTypes.number,

@@ -4,7 +4,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = void 0;
+exports.SliderControl = void 0;
 var _react = _interopRequireWildcard(require("react"));
 var _propTypes = _interopRequireDefault(require("prop-types"));
 require("./style.css");
@@ -67,8 +67,7 @@ var SliderControl = function SliderControl(props) {
     className: "value right"
   }, max))));
 };
-var _default = SliderControl;
-exports["default"] = _default;
+exports.SliderControl = SliderControl;
 SliderControl.propTypes = {
   'min': _propTypes["default"].number,
   'max': _propTypes["default"].number,
