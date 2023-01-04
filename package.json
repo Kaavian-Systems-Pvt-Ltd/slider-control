@@ -5,7 +5,7 @@
   "main": "scripts/SliderControl.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src/SliderControl.js --out-file scripts/SliderControl.jsx"
+    "build": "babel src/SliderControl.js --out-file scripts/SliderControl.jsx --watch"
   },
   "author": "",
   "license": "ISC",
