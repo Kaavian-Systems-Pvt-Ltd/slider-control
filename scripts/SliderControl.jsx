@@ -65,11 +65,10 @@ SliderControl.propTypes = {
   'defaultValue': _propTypes["default"].number,
   'onChange': _propTypes["default"].func
 };
-
-// SliderControl.defaultProps = {
-//   'min' : 0,
-//   'max' : 100,
-//   'step' : 1,
-//   'defaultValue' : 50,
-//   'onChange': setValue(),
-// }
+SliderControl.defaultProps = {
+  'min': 0,
+  'max': 100,
+  'step': 1,
+  'defaultValue': 50,
+  'onChange': setValue()
+};
