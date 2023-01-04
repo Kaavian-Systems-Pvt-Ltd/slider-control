@@ -6,7 +6,6 @@ import './style.css';
 export const SliderControl = (props) => {
   let value ;
   useEffect(() => {
-    console.log(value);
     const slideValue = document.querySelector("span");
     const inputSlider = document.querySelector("input");
     inputSlider.oninput = (()=>{

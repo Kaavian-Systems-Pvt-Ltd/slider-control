@@ -16,7 +16,6 @@ function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && 
 var SliderControl = function SliderControl(props) {
   var value;
   (0, _react.useEffect)(function () {
-    console.log(value);
     var slideValue = document.querySelector("span");
     var inputSlider = document.querySelector("input");
     inputSlider.oninput = function () {
