@@ -4,10 +4,9 @@ import PropTypes from 'prop-types';
 import './style.css';
 
 export const SliderControl = (props) => {
-  const [Value, setValue] = useState();
   let value ;
   useEffect(() => {
-    console.log(Value);
+    console.log(value);
     const slideValue = document.querySelector("span");
     const inputSlider = document.querySelector("input");
     inputSlider.oninput = (()=>{
@@ -29,20 +28,16 @@ export const SliderControl = (props) => {
     });
   })
 
-  const handleChange = (event) => {
-    setValue(event.target.value);
-  };
-
    return (
     <div>
     <div className="range">
       <div className="sliderValue">
-        <span>{Value}</span>
+        <span>{value}</span>
       </div>
       <div className="field">
         <div className="value left">
           {props.min}</div>
-        <input type="range" min={props.min} max={props.max} defaultValue={props.defaultValue} steps={props.step} onChange={handleChange}/>
+        <input type="range" min={props.min} max={props.max} defaultValue={props.defaultValue} steps={props.step} onChange={(e)=>{props.setValue(e.target.value)}}/>
         <div className="value right">
           {max}</div>
       </div>
@@ -64,5 +59,5 @@ SliderControl.defaultProps = {
   'max' : 100,
   'step' : 1,
   'defaultValue' : 50,
-  'handleChange': handleChange,
+  'handleChange': setValue,
 }
