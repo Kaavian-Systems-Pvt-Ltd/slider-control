@@ -69,6 +69,5 @@ SliderControl.defaultProps = {
   'min': 0,
   'max': 100,
   'step': 1,
-  'defaultValue': 50,
-  'onChange': onChange()
+  'defaultValue': 50
 };
