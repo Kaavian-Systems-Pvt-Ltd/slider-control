@@ -52,7 +52,7 @@ var SliderControl = function SliderControl(props) {
     defaultValue: props.defaultValue,
     steps: props.step,
     onChange: function onChange(e) {
-      props.setValue(e.target.value);
+      props.onChange(e.target.value);
     }
   }), /*#__PURE__*/_react["default"].createElement("div", {
     className: "value right"
@@ -64,12 +64,13 @@ SliderControl.propTypes = {
   'max': _propTypes["default"].number,
   'step': _propTypes["default"].number,
   'defaultValue': _propTypes["default"].number,
-  'setValue()': _propTypes["default"].func
+  'onChange': _propTypes["default"].func
 };
-SliderControl.defaultProps = {
-  'min': 0,
-  'max': 100,
-  'step': 1,
-  'defaultValue': 50,
-  'setValue()': setValue()
-};
+
+// SliderControl.defaultProps = {
+//   'min' : 0,
+//   'max' : 100,
+//   'step' : 1,
+//   'defaultValue' : 50,
+//   'onChange': setValue(),
+// }

@@ -37,7 +37,7 @@ export const SliderControl = (props) => {
       <div className="field">
         <div className="value left">
           {props.min}</div>
-        <input type="range" min={props.min} max={props.max} defaultValue={props.defaultValue} steps={props.step} onChange={(e)=>{props.setValue(e.target.value)}}/>
+        <input type="range" min={props.min} max={props.max} defaultValue={props.defaultValue} steps={props.step} onChange={(e)=>{props.onChange(e.target.value)}}/>
         <div className="value right">
           {max}</div>
       </div>
@@ -51,13 +51,13 @@ SliderControl.propTypes = {
   'max': PropTypes.number,
   'step': PropTypes.number,
   'defaultValue': PropTypes.number,
-  'setValue()' : PropTypes.func,
+  'onChange' : PropTypes.func,
 }
 
-SliderControl.defaultProps = {
-  'min' : 0,
-  'max' : 100,
-  'step' : 1,
-  'defaultValue' : 50,
-  'setValue()': setValue(),
-}
+// SliderControl.defaultProps = {
+//   'min' : 0,
+//   'max' : 100,
+//   'step' : 1,
+//   'defaultValue' : 50,
+//   'onChange': setValue(),
+// }
