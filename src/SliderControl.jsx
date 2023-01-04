@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
-import './style.css'
+// import './style.css'
 
 const SliderControl = ({ defaultValue, min, max, step }) => {
   const [Value, setValue] = useState();
