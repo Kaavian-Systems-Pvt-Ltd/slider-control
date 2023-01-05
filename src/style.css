@@ -3,12 +3,8 @@
   margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
-  height: 80px;
-  width: 380px;
   background: #fff;
   color: #0E8692;
-  border-radius: 10px;
-  box-shadow: 1px 1px 9px 9px rgba(0, 0, 0, 0.1);
 }
 .sliderValue{
   position: relative;
@@ -19,7 +15,7 @@
   height: 45px;
   width: 45px;
   transform: translateX(-70%) scale(0);
-  top: -40px;
+  top: -70px;
   line-height: 55px;
   z-index: 3;
   text-align: center;

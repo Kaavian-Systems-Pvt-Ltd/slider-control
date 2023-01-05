@@ -26,10 +26,12 @@ export const SliderControl = (props) => {
       slideValue.classList.remove("show");
     });
   })
-
+  const setStyle ={
+    'width': props.width,
+  }
    return (
     <div>
-    <div className="range">
+    <div className="range" style={setStyle}>
       <div className="sliderValue">
         <span>{value}</span>
       </div>
@@ -51,11 +53,13 @@ SliderControl.propTypes = {
   'step': PropTypes.number,
   'defaultValue': PropTypes.number,
   'onChange' : PropTypes.func,
+  'width': PropTypes.string
 }
 
 SliderControl.defaultProps = {
   'min' : 0,
   'max' : 100,
   'step' : 1,
+  'width': '100%',
   'defaultValue' : 50,
 }

@@ -36,8 +36,12 @@ var SliderControl = function SliderControl(props) {
       slideValue.classList.remove("show");
     };
   });
+  var setStyle = {
+    'width': props.width
+  };
   return /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("div", {
-    className: "range"
+    className: "range",
+    style: setStyle
   }, /*#__PURE__*/_react["default"].createElement("div", {
     className: "sliderValue"
   }, /*#__PURE__*/_react["default"].createElement("span", null, value)), /*#__PURE__*/_react["default"].createElement("div", {
@@ -63,11 +67,13 @@ SliderControl.propTypes = {
   'max': _propTypes["default"].number,
   'step': _propTypes["default"].number,
   'defaultValue': _propTypes["default"].number,
-  'onChange': _propTypes["default"].func
+  'onChange': _propTypes["default"].func,
+  'width': _propTypes["default"].string
 };
 SliderControl.defaultProps = {
   'min': 0,
   'max': 100,
   'step': 1,
+  'width': '100%',
   'defaultValue': 50
 };
