@@ -65,3 +65,7 @@
   z-index: 1;
   color: #0E8692;
 }
+
+.sliderValue span .slide-values{
+  margin-left: 1rem;
+}

@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import './style.css';
 
@@ -33,12 +33,12 @@ export const SliderControl = (props) => {
     <div>
     <div className="range" style={setStyle}>
       <div className="sliderValue">
-        <span>{value}</span>
+        <span className='slide-values'>{value}</span>
       </div>
       <div className="field">
         <div className="value left">
           {props.min}</div>
-        <input type="range" min={props.min} max={props.max} defaultValue={props.defaultValue} steps={props.step} onChange={(e)=>{props.onChange(e.target.value)}}/>
+        <input type="range" min={props.min} max={props.max} defaultValue={props.defaultValue} onChange={(e)=>{props.onChange(e.target.value)}}/>
         <div className="value right">
           {props.max}</div>
       </div>
@@ -50,7 +50,6 @@ export const SliderControl = (props) => {
 SliderControl.propTypes = {
   'min': PropTypes.number,
   'max': PropTypes.number,
-  'step': PropTypes.number,
   'defaultValue': PropTypes.number,
   'onChange' : PropTypes.func,
   'width': PropTypes.string
@@ -59,7 +58,6 @@ SliderControl.propTypes = {
 SliderControl.defaultProps = {
   'min' : 0,
   'max' : 100,
-  'step' : 1,
   'width': '100%',
   'defaultValue' : 50,
 }

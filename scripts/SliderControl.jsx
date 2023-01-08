@@ -44,7 +44,9 @@ var SliderControl = function SliderControl(props) {
     style: setStyle
   }, /*#__PURE__*/_react["default"].createElement("div", {
     className: "sliderValue"
-  }, /*#__PURE__*/_react["default"].createElement("span", null, value)), /*#__PURE__*/_react["default"].createElement("div", {
+  }, /*#__PURE__*/_react["default"].createElement("span", {
+    className: "slide-values"
+  }, value)), /*#__PURE__*/_react["default"].createElement("div", {
     className: "field"
   }, /*#__PURE__*/_react["default"].createElement("div", {
     className: "value left"
@@ -53,7 +55,6 @@ var SliderControl = function SliderControl(props) {
     min: props.min,
     max: props.max,
     defaultValue: props.defaultValue,
-    steps: props.step,
     onChange: function onChange(e) {
       props.onChange(e.target.value);
     }
@@ -65,7 +66,6 @@ exports.SliderControl = SliderControl;
 SliderControl.propTypes = {
   'min': _propTypes["default"].number,
   'max': _propTypes["default"].number,
-  'step': _propTypes["default"].number,
   'defaultValue': _propTypes["default"].number,
   'onChange': _propTypes["default"].func,
   'width': _propTypes["default"].string
@@ -73,7 +73,6 @@ SliderControl.propTypes = {
 SliderControl.defaultProps = {
   'min': 0,
   'max': 100,
-  'step': 1,
   'width': '100%',
   'defaultValue': 50
 };
