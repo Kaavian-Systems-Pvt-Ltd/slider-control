@@ -1,19 +1,24 @@
 # Slider Control
 
 ## Description
->> This package contains slider control.
+>This package contains slider control.
 
 ## Install
 
     npm i https://github.com/Kaavian-Systems-Pvt-Ltd/slider-control.git
 
-Install the above package in your package.json inside the react app folder .
+>>Install the above package in your package.json inside the react app folder .
 
-After installing the package you can import the slider into your app and make use of the slider-control.
+>After installing the package you can import the slider into your app and make use of the slider-control.
 
 # < SliderControl/>
 
-< SliderControl /> In this react function you can easiy customize the Slider-Control like (width of the slider, minimum value, maximum value, set variable function, default value of the slider ).
+For this slider control module we can give some of the arguments to customize it. Such as 
+>>>><li>Width of the slider  
+>>>><li>Minimum value  
+>>>><li>Maximum value  
+>>>><li>Set variable function  
+>>>><li>Default value of the slider  
 
 ## Usage
 
